@@ -318,60 +318,63 @@
 
                             <div class="col-lg-4">
                                 <div class="info-item d-flex align-items-center">
-                                    <i class="bi bi-telephone flex-shrink-0"></i>
-                                    <div>
-                                        <h3>Bel gerust</h3>
-                                        <p>+31 6 46 343 609</p>
-                                    </div>
+                                    <a href="mailto:tim@filatelie.net">
+                                        <i class="bi bi-telephone flex-shrink-0"></i>
+                                        <div>
+                                            <h3>Bel gerust</h3>
+                                            <p>+31 6 46 343 609</p>
+                                    </a>
                                 </div>
-                            </div><!-- End Info Item -->
 
-                            <div class="col-lg-4">
-                                <div class="info-item d-flex align-items-center">
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="col-lg-4">
+                            <div class="info-item d-flex align-items-center">
+                                <a href="mailto:tim@filatelie.net">
                                     <i class="bi bi-envelope flex-shrink-0"></i>
                                     <div>
                                         <h3>Stuur een mail</h3>
                                         <p>Tim@filatelie.net</p>
-                                    </div>
-                                </div>
-                            </div><!-- End Info Item -->
-
+                                </a>
+                            </div>
                         </div>
+                    </div><!-- End Info Item -->
+
+                </div>
+                </div>
+
+                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="row gy-4">
+
+                        <div class="col-md-6">
+                            <input type="text" name="name" class="form-control" placeholder="Uw naam" required="">
+                        </div>
+
+                        <div class="col-md-6 ">
+                            <input type="email" class="form-control" name="email" placeholder="Uw e-mail" required="">
+                        </div>
+
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="subject" placeholder="Onderwerp" required="">
+                        </div>
+
+                        <div class="col-md-12">
+                            <textarea class="form-control" name="message" rows="6" placeholder="Bericht"
+                                required=""></textarea>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <div class="loading">Laden</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Uw bericht is verzonden. Dank je!</div>
+
+                            <button type="submit">Bericht versturen</button>
+                        </div>
+
                     </div>
-
-                    <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-                        data-aos-delay="300">
-                        <div class="row gy-4">
-
-                            <div class="col-md-6">
-                                <input type="text" name="name" class="form-control" placeholder="Uw naam" required="">
-                            </div>
-
-                            <div class="col-md-6 ">
-                                <input type="email" class="form-control" name="email" placeholder="Uw e-mail"
-                                    required="">
-                            </div>
-
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" name="subject" placeholder="Onderwerp"
-                                    required="">
-                            </div>
-
-                            <div class="col-md-12">
-                                <textarea class="form-control" name="message" rows="6" placeholder="Bericht"
-                                    required=""></textarea>
-                            </div>
-
-                            <div class="col-md-12 text-center">
-                                <div class="loading">Laden</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Uw bericht is verzonden. Dank je!</div>
-
-                                <button type="submit">Bericht versturen</button>
-                            </div>
-
-                        </div>
-                    </form><!-- End Contact Form -->
+                </form><!-- End Contact Form -->
 
                 </div>
 

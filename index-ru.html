@@ -318,66 +318,69 @@
                                     <i class="bi bi-geo-alt flex-shrink-0"></i>
                                     <div>
                                         <h3>Адрес</h3>
-                                        <p>A108 Adam Street, Нью-Йорк, NY 535022</p>
+                                        <p>-</p>
                                     </div>
                                 </div>
                             </div><!-- End Info Item -->
 
                             <div class="col-lg-4">
                                 <div class="info-item d-flex align-items-center">
-                                    <i class="bi bi-telephone flex-shrink-0"></i>
-                                    <div>
-                                        <h3>Позвоните нам</h3>
-                                        <p>+1 5589 55488 55</p>
-                                    </div>
+                                    <a href="tel:+31646343609">
+                                        <i class="bi bi-telephone flex-shrink-0"></i>
+                                        <div>
+                                            <h3>Позвоните мне </h3>
+                                            <p>+31 6 46 343 609</p>
+                                    </a>
                                 </div>
-                            </div><!-- End Info Item -->
+                            </div>
+                        </div><!-- End Info Item -->
 
-                            <div class="col-lg-4">
-                                <div class="info-item d-flex align-items-center">
+                        <div class="col-lg-4">
+                            <div class="info-item d-flex align-items-center">
+                                <a href="mailto:tim@filatelie.net">
                                     <i class="bi bi-envelope flex-shrink-0"></i>
                                     <div>
-                                        <h3>Напишите нам</h3>
-                                        <p>info@example.com</p>
-                                    </div>
-                                </div>
-                            </div><!-- End Info Item -->
-
+                                        <h3>Напишите мне</h3>
+                                        <p>tim@filatelie.net</p>
+                                </a>
+                            </div>
                         </div>
+                    </div><!-- End Info Item -->
+
+                </div>
+                </div>
+
+                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="row gy-4">
+
+                        <div class="col-md-6">
+                            <input type="text" name="name" class="form-control" placeholder="Ваше имя" required="">
+                        </div>
+
+                        <div class="col-md-6 ">
+                            <input type="email" class="form-control" name="email" placeholder="Ваш email" required="">
+                        </div>
+
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="subject" placeholder="Тема" required="">
+                        </div>
+
+                        <div class="col-md-12">
+                            <textarea class="form-control" name="message" rows="6" placeholder="Сообщение"
+                                required=""></textarea>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <div class="loading">Загрузка</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Ваше сообщение отправлено. Спасибо!</div>
+
+                            <button type="submit">Отправить сообщение</button>
+                        </div>
+
                     </div>
-
-                    <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-                        data-aos-delay="300">
-                        <div class="row gy-4">
-
-                            <div class="col-md-6">
-                                <input type="text" name="name" class="form-control" placeholder="Ваше имя" required="">
-                            </div>
-
-                            <div class="col-md-6 ">
-                                <input type="email" class="form-control" name="email" placeholder="Ваш email"
-                                    required="">
-                            </div>
-
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" name="subject" placeholder="Тема" required="">
-                            </div>
-
-                            <div class="col-md-12">
-                                <textarea class="form-control" name="message" rows="6" placeholder="Сообщение"
-                                    required=""></textarea>
-                            </div>
-
-                            <div class="col-md-12 text-center">
-                                <div class="loading">Загрузка</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Ваше сообщение отправлено. Спасибо!</div>
-
-                                <button type="submit">Отправить сообщение</button>
-                            </div>
-
-                        </div>
-                    </form><!-- End Contact Form -->
+                </form><!-- End Contact Form -->
 
                 </div>
 
